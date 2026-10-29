@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>今日喵力隐私政策</title>
+  <style>
+    :root {
+      --bg: #f7f7f5;
+      --text: #1c1c1a;
+      --muted: #5c5c57;
+      --line: #e3e3de;
+      --head: #efefeb;
+      --link: #1d4f91;
+      --max: 42rem;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 17px;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+      line-height: 1.75;
+    }
+
+    .page {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 1.5rem 1.25rem 3.5rem;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand {
+      margin: 0;
+      font-size: 0.95rem;
+      font-weight: 650;
+      letter-spacing: 0.01em;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      font-size: 0.9rem;
+    }
+
+    .lang-btn {
+      appearance: none;
+      margin: 0;
+      padding: 0.2rem 0.15rem;
+      border: 0;
+      background: none;
+      color: var(--muted);
+      font: inherit;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      cursor: pointer;
+    }
+
+    .lang-btn[aria-pressed="true"] {
+      color: var(--text);
+      font-weight: 700;
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 0.28em;
+    }
+
+    .lang-btn:focus-visible {
+      outline: 2px solid var(--text);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    .sep {
+      margin: 0 0.45rem;
+      color: #b9b9b3;
+    }
+
+    main {
+      padding-top: 1.75rem;
+    }
+
+    article :first-child {
+      margin-top: 0;
+    }
+
+    h1, h2, h3 {
+      line-height: 1.35;
+      font-weight: 650;
+    }
+
+    h1 {
+      font-size: 1.65rem;
+      margin: 0 0 1rem;
+    }
+
+    h2 {
+      font-size: 1.15rem;
+      margin: 2.15rem 0 0.7rem;
+    }
+
+    h3 {
+      font-size: 1.02rem;
+      margin: 1.55rem 0 0.45rem;
+    }
+
+    p, ul {
+      margin: 0 0 1rem;
+    }
+
+    ul {
+      padding-left: 1.25rem;
+    }
+
+    li + li {
+      margin-top: 0.4rem;
+    }
+
+    a {
+      color: var(--link);
+      text-underline-offset: 0.15em;
+    }
+
+    .updated {
+      color: var(--muted);
+    }
+
+    .table-scroll {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin: 0 0 1.15rem;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+
+    table {
+      width: 100%;
+      min-width: 34rem;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+      line-height: 1.55;
+    }
+
+    th, td {
+      padding: 0.7rem 0.8rem;
+      text-align: start;
+      vertical-align: top;
+      border-bottom: 1px solid var(--line);
+    }
+
+    th {
+      background: var(--head);
+      font-weight: 650;
+      white-space: nowrap;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    @media (min-width: 640px) {
+      html {
+        font-size: 18px;
+      }
+
+      .page {
+        padding: 2.5rem 1.5rem 4.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <p class="brand">
+        <span id="brand-zh">今日喵力</span>
+        <span id="brand-en" lang="en" hidden>DayMew</span>
+      </p>
+      <nav aria-label="Language">
+        <button type="button" class="lang-btn" id="btn-zh" data-lang="zh" aria-pressed="true">中文</button>
+        <span class="sep" aria-hidden="true">/</span>
+        <button type="button" class="lang-btn" id="btn-en" data-lang="en" aria-pressed="false">English</button>
+      </nav>
+    </header>
+    <main>
+      <article id="policy-zh" lang="zh-CN">
+<h1>今日喵力 / DayMew 隐私政策</h1>
+<p class="updated">最后更新日期：2026 年 10 月 29 日</p>
+<p>今日喵力（DayMew，以下简称“本应用”或“我们”）是一款习惯记录与打卡工具。本政策说明您在使用本应用时，相关数据如何被保存、使用、同步和处理，以及您可以作出的选择。</p>
+<p>本应用没有独立的注册登录系统，也没有用于集中保存用户习惯、日志或照片的开发者自有业务服务器。核心习惯数据保存在您的设备上；您主动开启 iCloud 同步时，相关数据还会同步至您个人的 iCloud 私有数据库。</p>
+<p>本应用使用 Mixpanel 进行产品使用分析，使用 RevenueCat 进行购买状态同步及购买分析。因此，“核心习惯内容不上传到开发者自有服务器”不表示“所有信息都不离开设备”。相关处理在本政策中分别说明。</p>
+<h2>1. 您在应用中创建的数据</h2>
+<p>根据您使用的功能，本应用会在设备上保存以下信息，以提供习惯管理、打卡、提醒和统计功能：</p>
+<ul><li>习惯信息：您选择的预设习惯或自定义名称、类型、图标、颜色、备注、标签、开始和结束日期、重复规则、提醒时间、目标、拍照要求及归档状态等。</li><li>打卡信息：日期、完成或跳过状态、数量、时长、完成时间、日志文字、照片及相关进度。</li><li>坏习惯记录：您主动记录的相关事件、发生时间、次数、数量、单位或时长等。</li><li>功能衍生数据：与上述记录相关的金币奖励、统计和展示状态等。</li></ul>
+<p>习惯名称、日志和照片可能包含您主动填写或拍摄的个人信息，例如人脸图像、文字，以及有关健康、宗教或其他私密生活的信息；是否属于敏感个人信息取决于具体内容及适用法律。这些内容仅用于您主动使用的习惯记录、打卡、展示、统计和可选同步功能，不用于广告，也不作为分析事件或用户属性发送至 Mixpanel 或 RevenueCat，不上传至开发者自有业务服务器。</p>
+<h2>2. 本地资料与偏好设置</h2>
+<p>本应用会在您的设备上保存昵称、头像选择、自定义头像图片、外观偏好、通知总开关、每周首日、打卡音效，以及为保持会员功能和优惠展示所需的本地状态等。</p>
+<p>本应用还会保存首次创建习惯的日期，用于显示加入天数。删除某一个习惯不会同时重置该日期。</p>
+<p>昵称、自定义头像、外观和通知总开关等设置，不属于当前习惯数据的 CloudKit 同步内容。每周首日设置在开启 iCloud 同步后可以同步。</p>
+<h2>3. iCloud 同步</h2>
+<p>iCloud 同步为 Pro 会员功能，需要有效的 Pro 会员资格才能开启。</p>
+<p>当您主动开启 iCloud 同步，并且设备已登录可用的 Apple 账户时，本应用使用 Apple 提供的 iCloud / CloudKit 服务同步相关数据，包括：</p>
+<ul><li>习惯及其设置；</li><li>打卡进度、日志和坏习惯事件；</li><li>标签；</li><li>打卡照片；</li><li>每周首日设置。</li></ul>
+<p>这些数据同步至您个人的 CloudKit 私有数据库，用于在使用同一 Apple 账户的设备之间保持数据一致。开发者不能通过 CloudKit 开发者后台查看其他用户私有数据库中的内容。</p>
+<p>iCloud 同步中的打卡照片需要上传至 Apple 的服务。因此，开启同步后，照片并非仅保存在单台设备本地。</p>
+<p>您可以在应用设置中关闭 iCloud 同步。关闭同步不会主动删除此前已经保存到 iCloud 的数据。同步的可用性和完成时间受到网络、设备状态、iCloud 存储空间及 Apple 服务状态等因素影响。</p>
+<p>Apple 对 iCloud 服务的处理还适用其相关条款和隐私政策：</p>
+<p><a href="https://www.apple.com/legal/privacy/">Apple 隐私政策</a></p>
+<h2>4. 相机、照片、通知与闹钟权限</h2>
+<h3>相机</h3>
+<p>当您打开打卡拍照页面时，本应用会在需要时请求相机权限，用于拍摄打卡照片。仅打开习惯中的“拍照打卡”开关不会预先请求相机权限。拒绝权限后，您无法使用现场拍照功能，但仍可使用不依赖相机的其他功能。</p>
+<h3>照片</h3>
+<p>当您在打卡相机页面通过相册选择照片时，本应用会请求照片库读取权限，并使用系统照片选择器选图。授权范围由您在系统提供的选项中决定，您可在 iOS 设置中调整。</p>
+<p>设置自定义头像时，本应用使用系统照片选择器获取您主动选择的图片。</p>
+<p>拍摄或选入的打卡照片会经过 JPEG 重编码，与处理后的自定义头像一起保存在应用自己的存储区域。本应用不申请写入系统相册的权限，也不会将打卡照片额外写入系统相册。开启 iCloud 同步后，打卡照片会按第 3 节同步至您个人的 iCloud 私有库；自定义头像不随习惯数据同步。系统备份属于第 9 节说明的独立系统机制。</p>
+<p>重编码不等于能够保证移除全部元数据。我们不承诺已去除图片中的全部 GPS / EXIF 等信息。</p>
+<h3>通知</h3>
+<p>当本应用需要安排本地通知时，可能请求通知权限，包括您开启每日提醒、保存带提醒的习惯，或保存尚未完成的好习惯并触发“今日成果”汇总通知安排时。即使某个习惯自身的提醒已关闭，安排“今日成果”汇总仍可能触发通知授权请求。已授权时，也可以安排计时结束提醒。通知内容可能包含习惯名称，请根据需要管理锁屏上的通知预览。</p>
+<p>这些日常提醒由设备安排。本应用没有用于发送此类习惯内容提醒的开发者自建远程推送服务器。iCloud 同步可能使用 Apple 的后台通知机制，这与习惯提醒是不同用途。</p>
+<h3>闹钟</h3>
+<p>仅在 iOS 26 及以上、您开启“闹钟提醒”并使用相应功能时，本应用会按需要请求系统闹钟授权。未授权时无法使用相关闹钟功能。较低系统版本不请求此项权限，依应用实际支持提供普通通知提醒。</p>
+<p>您可以随时通过 iOS 系统设置管理这些权限。拒绝或撤销权限会影响相应功能，不会因此授权我们收集其他无关数据。</p>
+<h2>5. 应用内购买与 RevenueCat</h2>
+<p>本应用通过 Apple App Store 提供月度、年度自动续期会员和永久会员购买选项。交易、支付和恢复购买使用 Apple 的 StoreKit / App Store 系统处理。</p>
+<p>本应用通过 StoreKit 获取购买和权益状态，以决定相关会员功能是否可用。我们不直接获取或保存您的银行卡号、信用卡信息、Apple 账户密码或完整支付凭证。</p>
+<p>本应用同时使用 RevenueCat 记录、同步和分析购买状态，帮助我们了解会员购买、续订、取消、到期和退款等情况。应用内会员权益仅依据经 StoreKit 验证的 App Store 交易状态判断；RevenueCat 不参与 Pro 权益判定，也不决定会员功能的开启或关闭。</p>
+<p>为实现这些用途，RevenueCat 会接收购买相关信息，可能包括应用用户标识、商品标识、交易或收据信息、购买及到期时间、订阅状态、恢复和退款信息，以及必要的应用与设备技术信息。SDK 使用的应用用户标识不等同于您在本应用填写的昵称，也不等同于 Apple 账户密码。</p>
+<p>我们已在 App Store Connect 配置 App Store 服务器通知。Apple 可以在应用未打开时，将续订、取消自动续订、到期、退款等交易状态发送至 RevenueCat，用于更新相关购买记录。</p>
+<p>我们不向 RevenueCat 主动发送您的习惯名称、备注、日志、打卡照片、自定义头像或昵称。</p>
+<p><a href="https://www.revenuecat.com/privacy">RevenueCat 隐私与数据处理说明</a></p>
+<h2>6. 产品使用分析与 Mixpanel</h2>
+<p>我们使用 Mixpanel 了解功能使用和购买流程，以改进应用。例如，分析用户是否打开应用、看到付费墙、遇到会员功能限制，或完成、取消购买。</p>
+<p>当前发送的事件包括：</p>
+<ul><li>应用打开；</li><li>付费墙展示及其来源、会员档位等；</li><li>因免费版功能限制而无法继续的功能类型；</li><li>购买开始、成功和用户取消，以及相应商品类型，包括优惠永久档；</li><li>点击恢复购买。</li></ul>
+<p>当前没有单独发送购买失败或等待中的分析事件。</p>
+<p>这些事件可能附带用于区分使用行为的 SDK 标识符、事件时间、应用版本、操作系统、设备型号，以及我们设置的来源或商品类型等属性。即使没有姓名或邮箱，这类标识符仍可能用于关联同一设备或安装的使用活动，因此我们不会将其笼统称为“完全匿名数据”。</p>
+<p>当前配置关闭了 Mixpanel 的自动事件采集及基于 IP 地址推断地理位置的功能，分析请求发送至 Mixpanel 的欧盟区域接口。关闭 IP 地理位置推断并不表示网络连接中服务方无法接收到 IP 地址。</p>
+<p>我们不为产品分析向 Mixpanel 发送习惯名称、备注、日志、照片、自定义头像或昵称原文，也不使用本应用的习惯内容建立广告画像。</p>
+<p>本应用当前没有集成第三方广告 SDK，也不请求跨应用广告跟踪授权。</p>
+<p>当前版本没有应用内关闭 Mixpanel 分析的开关。如需就分析数据提出反对、限制处理或删除请求，请联系下方邮箱。发送邮件本身不会即时关闭当前安装中的 SDK，应用继续运行时仍可能发送所述事件。停止使用并删除本应用会停止该安装之后的应用事件上报，但不会自动删除此前已经发送的数据。</p>
+<p><a href="https://mixpanel.com/legal/privacy-policy/">Mixpanel 隐私声明</a></p>
+<h2>7. 意见反馈、网页与外部服务</h2>
+<p>当您通过应用中的邮箱入口反馈问题时，系统会打开邮件应用，由您决定是否发送及发送哪些文字、图片或其他附件。我们会接收您发送的邮件地址和内容，用于回复、排查问题或处理隐私请求。</p>
+<p>请只发送解决问题所需的信息。习惯和照片不会仅因您打开反馈入口就自动作为邮件附件提交给我们。</p>
+<p>本应用可能包含 Apple 标准使用条款，以及微信、小红书、X、Threads 等社交平台链接。您主动打开这些链接后，相应网站或服务可能接收网络通信所需的信息，并根据其自身规则处理。</p>
+<p>本应用的使用条款采用 Apple 标准最终用户许可协议（EULA）；该协议与本隐私政策是不同文件，相关入口分别展示。</p>
+<p>隐私政策网页通过 GitHub Pages 托管。访问网页时，GitHub 会为安全目的记录访问者的 IP 地址。网页访问与应用内的习惯数据存储是不同的处理场景。</p>
+<p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub 隐私声明</a></p>
+<h2>8. 数据共享与处理地区</h2>
+<p>我们不会出售您的习惯、日志或照片。我们为提供本政策中说明的功能使用以下服务：</p>
+<div class="table-scroll"><table><thead><tr><th>服务</th><th>用途</th><th>主要涉及的数据</th></tr></thead><tbody><tr><td>Apple iCloud / CloudKit</td><td>您主动开启的跨设备同步</td><td>习惯、进度、日志、事件、标签、打卡照片、每周首日</td></tr><tr><td>Apple App Store / StoreKit</td><td>支付、购买恢复及会员权益验证</td><td>商品、交易与会员状态等</td></tr><tr><td>RevenueCat</td><td>购买状态同步与购买分析</td><td>购买记录、应用用户标识及必要技术信息等</td></tr><tr><td>Mixpanel</td><td>产品使用与购买流程分析</td><td>使用事件、SDK 标识符及必要技术属性等</td></tr><tr><td>邮件服务</td><td>您主动发起的反馈与联系</td><td>您发送的邮箱、正文及附件</td></tr><tr><td>GitHub Pages</td><td>提供隐私政策网页</td><td>网页访问所需技术信息及安全日志</td></tr></tbody></table></div>
+<p>本政策说明我们在本应用中使用这些服务的目的和范围。相关服务说明不能替代我们对本应用数据处理所承担的责任。</p>
+<p>数据处理地点可能与您所在的国家或地区不同。当前 Mixpanel 分析请求使用欧盟区域接口；RevenueCat 相关处理可能涉及美国的基础设施；Apple、GitHub、邮件及其他服务的处理地点还取决于其服务安排。欧盟区域接口不等同于所有相关服务和支持处理都仅发生在欧盟。</p>
+<p>如需进一步了解服务提供方的隐私处理说明：</p>
+<ul><li><a href="https://mixpanel.com/legal/privacy-policy/">Mixpanel 隐私声明</a></li><li><a href="https://www.revenuecat.com/privacy">RevenueCat 隐私说明</a></li></ul>
+<h2>9. 数据保存与删除</h2>
+<h3>本地习惯及打卡数据</h3>
+<p>相关数据通常随您使用本应用而保存，直至您主动删除或系统清理相应应用数据。</p>
+<p>您可以删除单个习惯。该操作会删除该习惯的相关进度、事件和打卡照片等数据。</p>
+<p>您也可以清空某个习惯的全部打卡记录，同时保留该习惯本身。相关进度、事件和照片会随之删除，相关金币统计也会受到影响。</p>
+<h3>iCloud 数据</h3>
+<p>如果删除发生时 iCloud 同步已开启，相关删除会通过 Apple 的同步机制传播至云端及其他设备。云端和各设备完成删除可能存在时间差，不应理解为点击后在所有位置立即清除。</p>
+<p>关闭同步或卸载本应用不会主动清除此前的 iCloud 数据。您可以通过 Apple 提供的 iCloud 存储管理功能管理相应数据。</p>
+<h3>卸载、系统备份与其他副本</h3>
+<p>删除应用时，本地应用容器中的数据由 iOS 按系统规则处理。卸载或删除应用不等同于清除已经同步的云端数据、系统备份或您自行保存在其他位置的副本。iOS 的“卸载 App（保留文稿与数据）”与“删除 App”也可能产生不同结果。</p>
+<p>当前版本不提供独立的习惯数据导入、导出或手动备份功能；Apple 的设备或系统备份属于另外的系统机制。</p>
+<h3>分析、购买及反馈数据</h3>
+<p>删除习惯或卸载应用不会自动向 Mixpanel、RevenueCat 或邮件服务发起历史数据删除请求。</p>
+<p>相关数据的保存以提供分析、会员状态处理、支持和安全等本政策所述目的所需期间为限，并考虑法律义务、争议处理及服务中的数据删除和备份机制。我们不会仅因应用没有注册账户，就将分析和购买数据视为不存在。</p>
+<p>您可以通过本政策的联系邮箱提出访问或删除请求。我们会在能够确认请求与相关记录关联的范围内，处理由我们控制的数据，必要时指示相关服务方配合。本应用没有注册账户，也没有向您展示 Mixpanel 标识符的应用内入口；如果无法将请求与具体分析或购买记录可靠对应，我们会说明实际限制，而不能保证定位并删除第三方系统中的全部相关记录。对仅存放在您设备或个人 iCloud 私有库中的内容，我们无法远程代您访问或删除。</p>
+<h2>10. 您的选择与权利</h2>
+<p>您可以通过本应用及 iOS 提供的功能：</p>
+<ul><li>查看、修改、删除习惯或清空某个习惯的打卡记录；</li><li>修改昵称、头像和相关偏好；</li><li>开启或关闭 iCloud 同步，并使用 Apple 提供的工具管理云端数据；</li><li>调整相机、照片、通知和闹钟权限；</li><li>通过 Apple 提供的订阅管理功能管理自动续期会员；</li><li>就本政策及我们控制的相关数据向我们提出请求。</li></ul>
+<p>根据适用于您的法律，您还可能享有访问、更正、删除、获取副本、限制或反对特定处理，以及在适用时撤回同意等权利。您可以通过下方邮箱联系我们，我们会依法处理。我们不会为识别请求而要求您发送 Apple 账户密码、银行卡信息或不必要的习惯日志、照片。</p>
+<h2>11. 数据安全</h2>
+<p>我们尽量减少不必要的数据收集和传输，并将核心习惯内容与产品分析、购买分析区分处理。核心数据主要保存在您的设备及您主动使用的 Apple 私有云环境中。</p>
+<p>设备、账户或电子存储和网络传输无法保证绝对安全。请保护好设备及 Apple 账户，并根据需要设置照片和通知预览权限。</p>
+<h2>12. 未成年人</h2>
+<p>如果您是未成年人，请在适用法律要求的监护人指导或同意下使用本应用。若您认为我们不当处理了未成年人的个人信息，可通过下方邮箱联系我们，我们会核实并依法处理。</p>
+<h2>13. 政策更新</h2>
+<p>当功能、数据处理方式或服务使用情况发生变化时，我们可能更新本政策并调整更新日期。对于依法需要另行告知或取得同意的变化，我们会按适用要求处理。</p>
+<h2>14. 联系我们</h2>
+<p>运营主体 / 开发者：QiHu Wang 联系邮箱：<a href="mailto:qihu.studio@gmail.com">qihu.studio@gmail.com</a></p>
+<p>如需提出隐私问题或相关数据请求，请说明涉及的功能和请求类型。我们将在适用法律规定的期限内回复，并在必要范围内核实请求。如依法需要延长处理时间，会告知原因和后续安排。</p>
+</article>
+      <article id="policy-en" lang="en" hidden>
+<h1>DayMew Privacy Policy</h1>
+<p class="updated">Last updated: October 29, 2026</p>
+<p>DayMew (“the app,” “we,” or “us”) is a habit tracking and check-in app. This policy explains how data is stored, used, synchronized, and otherwise processed when you use the app, and the choices available to you.</p>
+<p>The app does not have an independent account registration or sign-in system, and we do not operate our own business servers to centrally store your habits, journals, or photos. Core habit data is stored on your device. If you enable iCloud Sync, relevant data is also synchronized to your personal iCloud private database.</p>
+<p>We use Mixpanel for product usage analytics and RevenueCat for purchase status synchronization and purchase analytics. Keeping core habit content off developer-operated servers does not mean that no information leaves your device. These activities are explained separately below.</p>
+<h2>1. Data you create in the app</h2>
+<p>Depending on the features you use, the app stores the following information on your device to provide habit management, check-ins, reminders, and statistics:</p>
+<ul><li>Habit information: a selected preset or custom name, habit type, icon, color, notes, tags, start and end dates, repeat rules, reminder times, goals, photo requirements, archive status, and related settings.</li><li>Check-in information: dates, completed or skipped status, quantities, durations, completion times, journal text, photos, and related progress.</li><li>Bad-habit records: events you choose to record, their times, counts, quantities, units, or durations.</li><li>Derived feature data: coin rewards, statistics, and display states associated with these records.</li></ul>
+<p>Habit names, journals, and photos may contain personal information you choose to enter or capture, including faces, text, and information about health, religion, or other private aspects of your life. Whether information is sensitive personal data depends on its content and applicable law. This content is used only for the habit recording, check-in, display, statistics, and optional synchronization features you choose to use. It is not used for advertising, sent to Mixpanel or RevenueCat as analytics events or user attributes, or uploaded to our own business servers.</p>
+<h2>2. Local profile and preferences</h2>
+<p>The app stores your nickname, avatar choice, custom avatar image, appearance preferences, notification master setting, first day of the week, check-in sound, and local states needed for membership features and offer presentation on your device.</p>
+<p>It also stores the date you first created a habit to display how long you have been using the app. Deleting an individual habit does not reset that date.</p>
+<p>Your nickname, custom avatar, appearance, and notification master setting are not included in the current CloudKit habit-data synchronization. The first-day-of-week setting can synchronize when iCloud Sync is enabled.</p>
+<h2>3. iCloud Sync</h2>
+<p>iCloud Sync is a Pro feature. You need an active Pro membership to enable it.</p>
+<p>If you enable iCloud Sync and your device is signed in to an available Apple Account, the app uses Apple&#x27;s iCloud / CloudKit services to synchronize relevant data, including:</p>
+<ul><li>Habits and their settings;</li><li>Check-in progress, journals, and bad-habit events;</li><li>Tags;</li><li>Check-in photos;</li><li>Your first-day-of-week setting.</li></ul>
+<p>This data is synchronized to your personal CloudKit private database to keep devices signed in to the same Apple Account consistent. The developer cannot view the contents of other users&#x27; private databases through the CloudKit developer dashboard.</p>
+<p>Synchronizing check-in photos requires uploading them to Apple&#x27;s services. Once synchronization is enabled, those photos are no longer stored only on a single device.</p>
+<p>You can turn off iCloud Sync in the app&#x27;s settings. Turning it off does not actively delete data already stored in iCloud. Availability and completion of synchronization depend on factors such as your network, device state, iCloud storage space, and Apple&#x27;s services.</p>
+<p>Apple&#x27;s handling of iCloud services is also subject to its applicable terms and privacy policy:</p>
+<p><a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a></p>
+<h2>4. Camera, photos, notifications, and alarm permissions</h2>
+<h3>Camera</h3>
+<p>When you open the check-in camera screen, the app requests camera permission if needed to take check-in photos. Turning on a habit&#x27;s photo check-in requirement alone does not request camera permission in advance. If you decline permission, you cannot take photos in the app, but other features that do not require the camera remain available.</p>
+<h3>Photos</h3>
+<p>When you select photos from the photo library within the check-in camera screen, the app requests photo-library read access and uses the system photo picker. You choose the access scope through the options provided by iOS and can change it in system settings.</p>
+<p>When setting a custom avatar, the app uses the system photo picker to obtain the image you choose.</p>
+<p>Photos taken or selected for check-ins are re-encoded as JPEG and saved in the app&#x27;s own storage, along with processed custom avatar images. The app does not request permission to write to the system photo library and does not save an additional copy of check-in photos there. When you enable iCloud Sync, check-in photos synchronize to your personal iCloud private database as described in Section 3; custom avatars do not synchronize with habit data. System backups are a separate system mechanism described in Section 9.</p>
+<p>Re-encoding does not guarantee removal of all metadata. We do not promise that all GPS, EXIF, or other metadata has been removed.</p>
+<h3>Notifications</h3>
+<p>The app may request notification permission when it needs to schedule local notifications. This includes enabling daily reminders, saving a habit with reminders, or saving an unfinished good habit that triggers scheduling of a daily results summary. Scheduling the daily results summary may request permission even if that habit&#x27;s own reminder is turned off. When permission has already been granted, the app can also schedule timer-completion reminders. Notification content may include habit names; manage lock-screen notification previews according to your preferences.</p>
+<p>These everyday reminders are scheduled on your device. We do not operate our own remote push server to send reminders containing your habit content. iCloud synchronization may use Apple&#x27;s background notification mechanisms for a different purpose.</p>
+<h3>Alarms</h3>
+<p>Only on iOS 26 or later, when you enable and use alarm reminders, the app requests system alarm authorization as needed. Without authorization, the relevant alarm feature is unavailable. Earlier system versions do not request this authorization and use ordinary notification reminders where supported by the app.</p>
+<p>You can manage these permissions in iOS system settings at any time. Declining or withdrawing permission affects the relevant feature and does not authorize us to collect unrelated data.</p>
+<h2>5. In-app purchases and RevenueCat</h2>
+<p>The app offers monthly and annual auto-renewing memberships and one-time lifetime membership options through Apple&#x27;s App Store. Transactions, payments, and purchase restoration use Apple&#x27;s StoreKit / App Store systems.</p>
+<p>The app obtains purchase and entitlement states through StoreKit to determine access to membership features. We do not directly obtain or store your debit or credit card numbers, Apple Account password, or complete payment credentials.</p>
+<p>We also use RevenueCat to record, synchronize, and analyze purchase status, helping us understand membership purchases, renewals, cancellations, expirations, and refunds. In-app membership access is determined solely by App Store transaction states verified through StoreKit. RevenueCat does not participate in Pro entitlement decisions or control whether membership features are enabled or disabled.</p>
+<p>For these purposes, RevenueCat receives purchase-related information, which may include an app user identifier, product identifiers, transaction or receipt information, purchase and expiration times, subscription status, restoration and refund information, and necessary app and device technical information. An app user identifier used by the SDK is not the nickname you enter in the app or your Apple Account password.</p>
+<p>We have configured App Store Server Notifications in App Store Connect. Apple can send transaction status updates, such as renewals, cancellation of auto-renewal, expirations, and refunds, to RevenueCat even when the app is not open, so that related purchase records can be updated.</p>
+<p>We do not intentionally send RevenueCat your habit names, notes, journals, check-in photos, custom avatar, or nickname.</p>
+<p><a href="https://www.revenuecat.com/privacy">RevenueCat Privacy and Data Processing Information</a></p>
+<h2>6. Product usage analytics and Mixpanel</h2>
+<p>We use Mixpanel to understand feature usage and purchase flows and improve the app. For example, we analyze whether users open the app, see a paywall, encounter a membership restriction, or complete or cancel a purchase.</p>
+<p>The events currently sent cover:</p>
+<ul><li>App opens;</li><li>Paywall views, their source, membership tier, and related attributes;</li><li>The type of feature blocked by a free-version limit;</li><li>Purchase started, succeeded, and cancelled by the user, along with the product type, including discounted lifetime options;</li><li>Taps on restore purchases.</li></ul>
+<p>The app does not currently send separate analytics events for failed or pending purchases.</p>
+<p>Events may include SDK identifiers used to distinguish activity, event times, app version, operating system, device model, and attributes we configure, such as source or product type. Even without a name or email address, these identifiers may link activity from the same device or installation. We therefore do not describe this information as completely anonymous.</p>
+<p>The current configuration disables Mixpanel&#x27;s automatic event collection and IP-based geolocation. Analytics requests are sent to Mixpanel&#x27;s EU regional endpoint. Disabling IP-based geolocation does not mean a service cannot receive an IP address as part of a network connection.</p>
+<p>We do not send habit names, notes, journals, photos, custom avatars, or nickname text to Mixpanel for product analytics, and we do not use your habit content to create advertising profiles.</p>
+<p>The app currently contains no third-party advertising SDK and does not request cross-app advertising tracking authorization.</p>
+<p>The current version has no in-app switch to turn off Mixpanel analytics. To object to analytics or request restriction or deletion of related data, contact the email address below. Sending an email does not immediately disable the SDK in your current installation; the events described above may still be sent while the app continues to run. Stopping use of and deleting the app stops future app event reporting from that installation, but does not automatically delete information already sent.</p>
+<p><a href="https://mixpanel.com/legal/privacy-policy/">Mixpanel Privacy Statement</a></p>
+<h2>7. Feedback, websites, and external services</h2>
+<p>When you use the app&#x27;s email feedback link, the system opens your mail app. You decide whether to send a message and what text, images, or other attachments to include. We receive the email address and content you send to reply, investigate issues, or handle privacy requests.</p>
+<p>Please send only what is necessary to address your request. Opening the feedback link does not automatically attach your habits or photos to an email.</p>
+<p>The app may include links to Apple&#x27;s standard terms and social platforms such as WeChat, Xiaohongshu, X, and Threads. If you choose to open them, those websites or services may receive information necessary for network communication and process it under their own rules.</p>
+<p>The app&#x27;s Terms of Use are Apple&#x27;s Standard End User License Agreement (EULA). That agreement and this privacy policy are separate documents, presented through separate links.</p>
+<p>The privacy policy website is hosted on GitHub Pages. When you visit it, GitHub logs visitors&#x27; IP addresses for security purposes. Website visits and the storage of habit data in the app are separate processing contexts.</p>
+<p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a></p>
+<h2>8. Data sharing and processing locations</h2>
+<p>We do not sell your habits, journals, or photos. We use the following services to provide the functions described in this policy:</p>
+<div class="table-scroll"><table><thead><tr><th>Service</th><th>Purpose</th><th>Main data involved</th></tr></thead><tbody><tr><td>Apple iCloud / CloudKit</td><td>Cross-device synchronization you enable</td><td>Habits, progress, journals, events, tags, check-in photos, first day of the week</td></tr><tr><td>Apple App Store / StoreKit</td><td>Payments, purchase restoration, and membership verification</td><td>Products, transactions, and membership states</td></tr><tr><td>RevenueCat</td><td>Purchase status synchronization and purchase analytics</td><td>Purchase records, app user identifiers, and necessary technical information</td></tr><tr><td>Mixpanel</td><td>Product usage and purchase flow analytics</td><td>Usage events, SDK identifiers, and necessary technical attributes</td></tr><tr><td>Email services</td><td>Feedback and contact you initiate</td><td>Email address, message, and attachments you send</td></tr><tr><td>GitHub Pages</td><td>Hosting the privacy policy website</td><td>Technical information needed for website visits and security logs</td></tr></tbody></table></div>
+<p>This policy explains the purposes and scope of our use of these services in the app. Information provided by service providers does not replace our responsibility for the app&#x27;s data processing.</p>
+<p>Data may be processed outside your country or region. Mixpanel analytics requests currently use an EU regional endpoint; RevenueCat processing may involve infrastructure in the United States. Processing locations for Apple, GitHub, email, and other services also depend on their service arrangements. Using an EU endpoint does not mean all related service and support activities occur only in the EU.</p>
+<p>For additional information about the providers&#x27; privacy practices:</p>
+<ul><li><a href="https://mixpanel.com/legal/privacy-policy/">Mixpanel Privacy Statement</a></li><li><a href="https://www.revenuecat.com/privacy">RevenueCat Privacy Information</a></li></ul>
+<h2>9. Retention and deletion</h2>
+<h3>Local habits and check-in data</h3>
+<p>Relevant data is generally retained while you use the app until you delete it or the system removes the relevant app data.</p>
+<p>You can delete an individual habit, including its related progress, events, and check-in photos.</p>
+<p>You can also clear all check-in records for a particular habit while keeping the habit itself. Related progress, events, and photos are deleted, and related coin statistics are affected.</p>
+<h3>iCloud data</h3>
+<p>If iCloud Sync is enabled when you delete data, the deletion propagates through Apple&#x27;s synchronization mechanisms to the cloud and other devices. Deletion may take time to complete across locations and should not be understood as immediate removal everywhere.</p>
+<p>Turning off synchronization or deleting the app does not actively remove previous iCloud data. You can manage relevant data through Apple&#x27;s iCloud storage management tools.</p>
+<h3>App removal, system backups, and other copies</h3>
+<p>When you delete the app, iOS handles local app-container data under its system rules. Removing the app is not the same as clearing synchronized cloud data, system backups, or copies you have saved elsewhere. iOS&#x27;s Offload App option, which retains documents and data, can also have a different result from Delete App.</p>
+<p>The current version does not provide a separate habit-data import, export, or manual backup feature. Apple&#x27;s device and system backups are separate system mechanisms.</p>
+<h3>Analytics, purchase, and feedback data</h3>
+<p>Deleting habits or removing the app does not automatically request deletion of historical data from Mixpanel, RevenueCat, or email services.</p>
+<p>Relevant data is retained for the period needed for the analytics, membership processing, support, security, and other purposes described in this policy, taking into account legal obligations, dispute handling, and service deletion and backup mechanisms. The absence of an app account does not mean that analytics and purchase data does not exist.</p>
+<p>You can request access or deletion through the contact email below. Where we can reliably associate your request with relevant records, we will handle data under our control and instruct service providers to assist where needed. The app has no registered accounts or in-app way to display your Mixpanel identifier. If we cannot reliably associate a request with particular analytics or purchase records, we will explain the practical limitations and cannot guarantee that every relevant record in third-party systems can be located and deleted. We cannot remotely access or delete content stored only on your device or in your personal iCloud private database on your behalf.</p>
+<h2>10. Your choices and rights</h2>
+<p>Using the app and iOS features, you can:</p>
+<ul><li>View, edit, or delete habits, or clear check-in records for a particular habit;</li><li>Change your nickname, avatar, and preferences;</li><li>Enable or disable iCloud Sync and manage cloud data through Apple&#x27;s tools;</li><li>Adjust camera, photo, notification, and alarm permissions;</li><li>Manage auto-renewing memberships through Apple&#x27;s subscription management features;</li><li>Contact us about this policy or related data under our control.</li></ul>
+<p>Depending on applicable law, you may also have rights to access, correction, deletion, copies, restriction of or objection to certain processing, and withdrawal of consent where applicable. Contact us using the email below to exercise applicable rights. We do not ask you to send your Apple Account password, banking details, or unnecessary habit journals or photos to identify a request.</p>
+<h2>11. Data security</h2>
+<p>We aim to minimize unnecessary data collection and transmission and separate core habit content from product and purchase analytics. Core data is primarily stored on your device and in Apple&#x27;s private cloud environment when you choose to use it.</p>
+<p>Devices, accounts, electronic storage, and network transmission cannot guarantee absolute security. Protect your device and Apple Account and adjust photo permissions and notification previews as appropriate.</p>
+<h2>12. Minors</h2>
+<p>If you are a minor, use the app with parental or guardian guidance or consent where required by applicable law. If you believe we have improperly processed a minor&#x27;s personal information, contact us using the email below so we can investigate and act as required by law.</p>
+<h2>13. Changes to this policy</h2>
+<p>We may update this policy and its update date when features, data practices, or service use change. Where changes require additional notice or consent under applicable law, we will act accordingly.</p>
+<h2>14. Contact us</h2>
+<p>Operator / developer: QiHu Wang</p>
+<p>Email: <a href="mailto:qihu.studio@gmail.com">qihu.studio@gmail.com</a></p>
+<p>For privacy questions or data requests, please explain the feature involved and the type of request. We will respond within the period required by applicable law and verify requests only as necessary. If an extension is legally permitted and needed, we will explain the reason and next steps.</p>
+</article>
+    </main>
+  </div>
+  <script>
+    (function () {
+      var buttons = document.querySelectorAll("[data-lang]");
+      var articles = {
+        zh: document.getElementById("policy-zh"),
+        en: document.getElementById("policy-en")
+      };
+      var brands = {
+        zh: document.getElementById("brand-zh"),
+        en: document.getElementById("brand-en")
+      };
+      var titles = {
+        zh: "今日喵力隐私政策",
+        en: "DayMew Privacy Policy"
+      };
+      var htmlLang = {
+        zh: "zh-CN",
+        en: "en"
+      };
+
+      function setLang(lang) {
+        Object.keys(articles).forEach(function (key) {
+          var active = key === lang;
+          articles[key].hidden = !active;
+          brands[key].hidden = !active;
+        });
+        buttons.forEach(function (button) {
+          button.setAttribute("aria-pressed", button.getAttribute("data-lang") === lang ? "true" : "false");
+        });
+        document.documentElement.lang = htmlLang[lang];
+        document.title = titles[lang];
+      }
+
+      buttons.forEach(function (button) {
+        button.addEventListener("click", function () {
+          var lang = button.getAttribute("data-lang");
+          if (button.getAttribute("aria-pressed") === "true") {
+            return;
+          }
+          setLang(lang);
+          window.scrollTo(0, 0);
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
