@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>今日喵力支持</title>
+  <style>
+    :root {
+      --bg: #f7f7f5;
+      --text: #1c1c1a;
+      --muted: #5c5c57;
+      --line: #e3e3de;
+      --link: #1d4f91;
+      --max: 42rem;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 17px;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+      line-height: 1.75;
+    }
+
+    .page {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 1.5rem 1.25rem 3.5rem;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand {
+      margin: 0;
+      font-size: 0.95rem;
+      font-weight: 650;
+      letter-spacing: 0.01em;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      font-size: 0.9rem;
+    }
+
+    .lang-btn {
+      appearance: none;
+      margin: 0;
+      padding: 0.2rem 0.15rem;
+      border: 0;
+      background: none;
+      color: var(--muted);
+      font: inherit;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      cursor: pointer;
+    }
+
+    .lang-btn[aria-pressed="true"] {
+      color: var(--text);
+      font-weight: 700;
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 0.28em;
+    }
+
+    .lang-btn:focus-visible {
+      outline: 2px solid var(--text);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    .sep {
+      margin: 0 0.45rem;
+      color: #b9b9b3;
+    }
+
+    main {
+      padding-top: 1.75rem;
+    }
+
+    article :first-child {
+      margin-top: 0;
+    }
+
+    h1, h2 {
+      line-height: 1.35;
+      font-weight: 650;
+    }
+
+    h1 {
+      font-size: 1.65rem;
+      margin: 0 0 1rem;
+    }
+
+    h2 {
+      font-size: 1.15rem;
+      margin: 2.15rem 0 0.7rem;
+    }
+
+    p {
+      margin: 0 0 1rem;
+    }
+
+    a {
+      color: var(--link);
+      text-underline-offset: 0.15em;
+    }
+
+    .updated {
+      color: var(--muted);
+    }
+
+    @media (min-width: 640px) {
+      html {
+        font-size: 18px;
+      }
+
+      .page {
+        padding: 2.5rem 1.5rem 4.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <p class="brand">
+        <span id="brand-zh">今日喵力</span>
+        <span id="brand-en" lang="en" hidden>DayMew</span>
+      </p>
+      <nav aria-label="Language">
+        <button type="button" class="lang-btn" id="btn-zh" data-lang="zh" aria-pressed="true">中文</button>
+        <span class="sep" aria-hidden="true">/</span>
+        <button type="button" class="lang-btn" id="btn-en" data-lang="en" aria-pressed="false">English</button>
+      </nav>
+    </header>
+    <main>
+      <article id="support-zh" lang="zh-CN">
+        <h1>今日喵力支持</h1>
+        <p class="updated">最后更新日期：2026 年 11 月 2 日</p>
+        <p>本页面用于说明今日喵力（DayMew）的支持方式、购买与订阅、iCloud 同步、提醒以及相关条款。</p>
+
+        <h2>联系我们</h2>
+        <p>如果您在使用今日喵力时需要帮助，可以通过以下方式联系我们：</p>
+        <p>开发者：QiHu Wang</p>
+        <p>联系邮箱：<a href="mailto:qihu.studio@gmail.com">qihu.studio@gmail.com</a></p>
+
+        <h2>恢复购买</h2>
+        <p>如果您已经购买过今日喵力 Pro，可以在 App 内付费墙底部使用「恢复购买」恢复相应 Pro 权益。</p>
+        <p>请确保当前设备已登录用于购买的同一 Apple ID。本应用没有独立账号。</p>
+
+        <h2>月度与年度订阅</h2>
+        <p>月度 Pro 和年度 Pro 通过 Apple App Store 提供，属于自动续期订阅。</p>
+        <p>订阅会按月或按年自动续期，除非您在当前计费周期结束前取消。</p>
+        <p>您可以在 Apple ID 的订阅设置中管理或取消订阅。</p>
+        <p>月度订阅和年度订阅解锁同一套 Pro。一次只能有其中一种自动续期订阅生效。</p>
+        <p>如果您已经订阅，之后又购买终身 Pro，Apple 不会自动取消订阅。请到系统设置中自行取消，以免继续扣费。</p>
+
+        <h2>终身购买</h2>
+        <p>终身 Pro 为一次性购买，不属于自动续期订阅。</p>
+        <p>完成购买后，您可以持续使用相应的 Pro 权益，无需按月或按年续费。</p>
+        <p>终身购买与月度、年度订阅解锁同一套 Pro。</p>
+
+        <h2>iCloud 同步</h2>
+        <p>iCloud 同步是 Pro 功能，用于在您使用同一 Apple ID 的设备之间同步习惯、打卡记录、日志、标签和打卡照片等数据。</p>
+        <p>开启同步前，设备需要登录可用的 Apple 账户。同步依赖您的 Apple ID、iCloud 状态、网络和存储空间。如果 iCloud 未登录、同步未开启，或网络不可用，同步可能无法完成。</p>
+        <p>关闭同步不会主动删除此前已经保存到 iCloud 的数据。</p>
+
+        <h2>提醒与通知</h2>
+        <p>今日喵力的习惯提醒、今日成果汇总和计时结束提醒，由设备上的本地通知提供。在支持的系统版本上，也可以使用系统闹钟提醒。</p>
+        <p>提醒内容可能包含习惯名称。您可以随时在 iOS 设置中管理今日喵力的通知和闹钟权限。</p>
+        <p>本应用没有用于发送此类习惯内容提醒的开发者自建远程推送服务器。</p>
+
+        <h2>退款</h2>
+        <p>App Store 购买和退款由 Apple 处理。</p>
+        <p>今日喵力不直接处理付款，也无法代替 Apple 完成退款。如需申请退款，请通过 Apple 提供的退款流程操作。</p>
+
+        <h2>隐私政策</h2>
+        <p>关于今日喵力如何处理相关数据，请查看：</p>
+        <p><a href="https://qihu87.github.io/daymew-privacy/">https://qihu87.github.io/daymew-privacy/</a></p>
+
+        <h2>使用条款</h2>
+        <p>本应用的标准最终用户许可协议（EULA）请参见 Apple 标准许可协议：</p>
+        <p><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">www.apple.com/legal/internet-services/itunes/dev/stdeula/</a></p>
+      </article>
+
+      <article id="support-en" lang="en" hidden>
+        <h1>DayMew Support</h1>
+        <p class="updated">Last Updated: November 2, 2026</p>
+        <p>This page explains how to get support for DayMew, as well as information about purchases, subscriptions, iCloud Sync, reminders, and related terms.</p>
+
+        <h2>Contact</h2>
+        <p>If you need help using DayMew, you can contact us at:</p>
+        <p>Developer: QiHu Wang</p>
+        <p>Email: <a href="mailto:qihu.studio@gmail.com">qihu.studio@gmail.com</a></p>
+
+        <h2>Restore Purchases</h2>
+        <p>If you previously purchased DayMew Pro, you can restore your Pro access using Restore Purchases at the bottom of the in-app paywall.</p>
+        <p>Please make sure the device is signed in with the same Apple ID used for the original purchase. This app has no separate account.</p>
+
+        <h2>Monthly and Annual Subscriptions</h2>
+        <p>Monthly Pro and Annual Pro are offered through the Apple App Store as auto-renewable subscriptions.</p>
+        <p>The subscription renews automatically each month or year unless you cancel before the current billing period ends.</p>
+        <p>You can manage or cancel the subscription in your Apple ID subscription settings.</p>
+        <p>Monthly and annual subscriptions unlock the same Pro features. Only one auto-renewable subscription in this group can be active at a time.</p>
+        <p>If you buy Lifetime Pro after subscribing, Apple does not automatically cancel the subscription. Please cancel it in system settings to avoid further charges.</p>
+
+        <h2>Lifetime Purchase</h2>
+        <p>Lifetime Pro is a one-time purchase and is not an auto-renewable subscription.</p>
+        <p>After purchase, you can continue using the relevant Pro features without monthly or yearly renewal.</p>
+        <p>Lifetime Pro unlocks the same features as monthly and annual Pro.</p>
+
+        <h2>iCloud Sync</h2>
+        <p>iCloud Sync is a Pro feature used to synchronize habits, check-in records, journals, tags, and check-in photos across devices signed in with the same Apple ID.</p>
+        <p>Your device must be signed in to an available Apple Account before you enable sync. Sync depends on your Apple ID, iCloud status, network, and storage. It may not complete if iCloud is not signed in, sync is disabled, or the network is unavailable.</p>
+        <p>Turning off sync does not actively delete data already stored in iCloud.</p>
+
+        <h2>Reminders and Notifications</h2>
+        <p>Habit reminders, daily results summaries, and timer-completion alerts in DayMew are provided by local notifications on your device. On supported system versions, system alarm reminders may also be available.</p>
+        <p>Notification content may include habit names. You can manage DayMew notification and alarm permissions at any time in iOS Settings.</p>
+        <p>We do not operate our own remote push server to send reminders containing your habit content.</p>
+
+        <h2>Refunds</h2>
+        <p>App Store purchases and refunds are handled by Apple.</p>
+        <p>DayMew does not process payments directly and cannot issue refunds on Apple’s behalf. To request a refund, please use the refund process provided by Apple.</p>
+
+        <h2>Privacy Policy</h2>
+        <p>For information about how DayMew handles related data, please see:</p>
+        <p><a href="https://qihu87.github.io/daymew-privacy/">https://qihu87.github.io/daymew-privacy/</a></p>
+
+        <h2>Terms of Use</h2>
+        <p>The standard End User License Agreement (EULA) for this app is Apple’s Licensed Application End User License Agreement:</p>
+        <p><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">www.apple.com/legal/internet-services/itunes/dev/stdeula/</a></p>
+      </article>
+    </main>
+  </div>
+  <script>
+    (function () {
+      var buttons = document.querySelectorAll("[data-lang]");
+      var articles = {
+        zh: document.getElementById("support-zh"),
+        en: document.getElementById("support-en")
+      };
+      var brands = {
+        zh: document.getElementById("brand-zh"),
+        en: document.getElementById("brand-en")
+      };
+      var titles = {
+        zh: "今日喵力支持",
+        en: "DayMew Support"
+      };
+      var htmlLang = {
+        zh: "zh-CN",
+        en: "en"
+      };
+
+      function setLang(lang) {
+        Object.keys(articles).forEach(function (key) {
+          var active = key === lang;
+          articles[key].hidden = !active;
+          brands[key].hidden = !active;
+        });
+        buttons.forEach(function (button) {
+          button.setAttribute("aria-pressed", button.getAttribute("data-lang") === lang ? "true" : "false");
+        });
+        document.documentElement.lang = htmlLang[lang];
+        document.title = titles[lang];
+      }
+
+      buttons.forEach(function (button) {
+        button.addEventListener("click", function () {
+          var lang = button.getAttribute("data-lang");
+          if (button.getAttribute("aria-pressed") === "true") {
+            return;
+          }
+          setLang(lang);
+          window.scrollTo(0, 0);
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
